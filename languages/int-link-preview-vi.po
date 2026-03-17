@@ -4,50 +4,50 @@ msgstr ""
 "Project-Id-Version: Internal Link Preview Tooltip 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-17 23:47+0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-17 23:56+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi_VN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "X-Generator: Poedit 3.9\n"
 
 msgid "Displays a preview tooltip when hovering over internal links in posts."
-msgstr ""
+msgstr "Hiển thị chú thích xem trước khi di chuột qua các liên kết nội bộ trong bài viết."
 
 msgid "Content type to display"
-msgstr ""
+msgstr "Loại nội dung cần hiển thị"
 
 msgid "Excerpt"
-msgstr ""
+msgstr "Trích đoạn"
 
 msgid "Post Content"
-msgstr ""
+msgstr "Nội dung bài đăng"
 
 msgid "Number of words to display"
-msgstr ""
+msgstr "Số lượng từ cần hiển thị"
 
 msgid "Default is 80 words."
-msgstr ""
+msgstr "Mặc định là 80 từ."
 
 msgid "Button text"
-msgstr ""
+msgstr "Văn bản nút"
 
 msgid "Read more"
-msgstr ""
+msgstr "Đọc thêm"
 
 msgid "Text to display on the link button inside tooltip."
-msgstr ""
+msgstr "Văn bản hiển thị trên nút liên kết bên trong chú thích công cụ."
 
 msgid "Loading preview..."
-msgstr ""
+msgstr "Đang tải..."
 
 msgid "Post not found"
-msgstr ""
+msgstr "Không tìm thấy bài đăng"
 
 msgid "Donate to support this plugin"
-msgstr ""
+msgstr "Hãy quyên góp để hỗ trợ plugin này"
 
 msgid "Donate"
-msgstr ""
+msgstr "Ủng hộ"

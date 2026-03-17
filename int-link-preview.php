@@ -66,8 +66,8 @@ function ilpt_render_settings_page() {
                 <tr valign="top">
                     <th scope="row"><?php esc_html_e('Number of words to display', 'int-link-preview'); ?></th>
                     <td>
-                        <input type="number" name="ilpt_word_limit" value="<?php echo esc_attr(get_option('ilpt_word_limit', 200)); ?>" />
-                        <p class="description"><?php esc_html_e('Default is 200 words.', 'int-link-preview'); ?></p>
+                        <input type="number" name="ilpt_word_limit" value="<?php echo esc_attr(get_option('ilpt_word_limit', 80)); ?>" />
+                        <p class="description"><?php esc_html_e('Default is 80 words.', 'int-link-preview'); ?></p>
                     </td>
                 </tr>
                 <tr valign="top">
@@ -112,7 +112,7 @@ function ilpt_get_preview_data() {
 
     $title = get_the_title($post_id);
     $type = get_option('ilpt_content_type', 'excerpt');
-    $limit = (int) get_option('ilpt_word_limit', 200);
+    $limit = (int) get_option('ilpt_word_limit', 80);
 
     // Get content based on settings
     if ($type === 'excerpt') {
