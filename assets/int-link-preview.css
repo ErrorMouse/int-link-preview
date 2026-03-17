@@ -1,0 +1,83 @@
+.ilpt-tooltip {
+    position: absolute;
+    z-index: 999999;
+    width: 300px;
+    padding: 25px 15px 20px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.15);
+    font-family: inherit;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.ilpt-tooltip-title {
+    margin: 0 0 10px 0;
+    color: #1f385a;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.ilpt-tooltip-content {
+    margin: 0;
+    color: #4a5568;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.ilpt-tooltip-btn {
+    float: right;
+    margin-left: auto;
+    font-size: 13px;
+}
+
+.ilpt-loading {
+    padding: 10px 0;
+    color: #718096;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Tooltip Arrow */
+
+.ilpt-tooltip::before,
+.ilpt-tooltip::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    top: 100%;
+    left: 20px;
+}
+
+.ilpt-tooltip::after {
+    border-width: 10px 10px 0 10px;
+    border-color: #ffffff transparent transparent transparent;
+    z-index: 1;
+}
+
+.ilpt-tooltip::before {
+    border-width: 11px 11px 0 11px;
+    border-color: #e2e8f0 transparent transparent transparent;
+    z-index: 0;
+}
+
+/* Khi mũi nhọn nằm ở phía trên */
+
+.ilpt-tooltip.arrow-top::before,
+.ilpt-tooltip.arrow-top::after {
+    top: auto;
+    bottom: 100%;
+}
+
+.ilpt-tooltip.arrow-top::after {
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.ilpt-tooltip.arrow-top::before {
+    border-width: 0 11px 11px 11px;
+    border-color: transparent transparent #e2e8f0 transparent;
+}
