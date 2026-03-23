@@ -134,8 +134,8 @@ function ilpt_get_preview_data() {
 }
 
 /* Donate */
-add_action( 'admin_enqueue_scripts', 'ilpt_enqueue_admin_scripts' );
-function ilpt_enqueue_admin_scripts( $hook_suffix ) {
+add_action( 'admin_enqueue_scripts', 'ilpt_enqueue_admin_scripts' );  //_//
+function ilpt_enqueue_admin_scripts( $hook_suffix ) { //_//
 
 	$is_plugins_page  = ( 'plugins.php' === $hook_suffix );
 
@@ -159,21 +159,21 @@ function ilpt_enqueue_admin_scripts( $hook_suffix ) {
 	}
 }
 
-function ilpt_donate_link_html() {
+function ilpt_donate_link_html() {  //_//
 	$donate_url = 'https://err-mouse.id.vn/donate';
 	printf(
 		'<a href="%1$s" target="_blank" rel="noopener noreferrer" class="err-donate-link" aria-label="%2$s"><span>%3$s 🚀</span></a>',
 		esc_url( $donate_url ),
-		esc_attr__( 'Donate to support this plugin', 'int-link-preview' ), //
-		esc_html__( 'Donate', 'int-link-preview' ) //
+		esc_attr__( 'Donate to support this plugin', 'int-link-preview' ),  //-//
+		esc_html__( 'Donate', 'int-link-preview' )  //-//
 	);
 }
 
-add_filter( 'plugin_row_meta', 'ilpt_plugin_row_meta', 10, 2 );
-function ilpt_plugin_row_meta( $links, $file ) {
+add_filter( 'plugin_row_meta', 'ilpt_plugin_row_meta', 10, 2 );  //_//
+function ilpt_plugin_row_meta( $links, $file ) {  //_//
 	if ( plugin_basename( __FILE__ ) === $file ) {
 		ob_start();
-		ilpt_donate_link_html();
+		ilpt_donate_link_html();  //_//
 		$links['donate'] = ob_get_clean();
 	}
 	return $links;
